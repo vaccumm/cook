@@ -1,0 +1,146 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.dark-mode {
+  background-color: #333;
+  color: #f0f0f0;
+}
+
+#menu, #game, #gameOver, #countdown, #settings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#countdown {
+  font-size: 24px;
+}
+
+#game {
+  font-size: 24px;
+}
+
+#progressBarContainer {
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+#progressBar {
+  height: 30px;
+  width: 0;
+  background-color: #4caf50;
+  border-radius: 10px;
+}
+
+#gameOver {
+  font-size: 24px;
+}
+
+#endMessage {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+#finalScore {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#winCount {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#cookingImage {
+  width: 200px;
+  height: auto;
+  margin: 20px 0;
+}
+
+/* Dark Mode Styles */
+.dark-mode #menu, 
+.dark-mode #game, 
+.dark-mode #gameOver, 
+.dark-mode #countdown, 
+.dark-mode #settings {
+  background-color: #333;
+  color: #f0f0f0;
+}
+
+.dark-mode #progressBarContainer {
+  background-color: #555;
+}
+
+.dark-mode #progressBar {
+  background-color: #4caf50;
+}
+
+.dark-mode button {
+  background-color: #4caf50;
+  color: white;
+}
+
+.dark-mode button:hover {
+  background-color: #45a049;
+}
+
+.dark-mode #endMessage {
+  color: #ff5722;
+}
+
+.dark-mode #finalScore,
+.dark-mode #winCount {
+  color: #f0f0f0;
+}
+
+#settings {
+  text-align: center;
+}
+
+#modeSelection {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+#modeSelection button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#easyModeButton.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+#hardModeButton.active {
+  background-color: #f44336;
+  color: white;
+}
