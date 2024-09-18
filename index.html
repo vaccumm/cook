@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="menu">
+        <h1>Cooking Game</h1>
+        <p id="winCount">Wins: 0</p>
+        <button id="startButton">Start/Cook</button>
+        <span id="cooldownTimer" style="margin-left: 10px;">Cooldown: 0s</span>
+        <button id="settingsButton">Settings</button>
+    </div>
+
+    <div id="countdown" style="display: none;">
+        <h2>Get Ready!</h2>
+        <p id="countdownTimer">3</p>
+    </div>
+
+    <div id="game" style="display: none;">
+        <h2 id="foodName"></h2>
+        <div id="cookingArea">
+            <p id="instruction">Hit the correct letter key!</p>
+            <p id="cookingPhrase"></p>
+            <p id="currentLetter"></p>
+            <img id="cookingImage" src="" alt="Cooking Image" style="display: none;">
+            <div id="progressBarContainer">
+                <div id="progressBar"></div>
+            </div>
+            <div id="timer">Time Left: <span id="timeLeft">1</span>s</div>
+        </div>
+    </div>
+
+    <div id="gameOver" style="display: none;">
+        <h2 id="endMessage"></h2>
+        <p id="finalScore"></p>
+        <button id="backToMenuButton">Back to Menu</button>
+    </div>
+
+    <div id="settings" style="display: none;">
+        <h2>Settings</h2>
+        <button id="lightModeButton">Light Mode</button>
+        <button id="darkModeButton">Dark Mode</button>
+        <button id="pingCounterButton">Ping Counter: Off</button>
+        <div id="modeSelection">
+            <button id="easyModeButton" class="active">Easy Mode</button>
+            <button id="hardModeButton">Hard Mode</button>
+            <button id="extrasModeButton">Extras Mode</button>
+        </div>
+        <button id="closeSettingsButton">Close</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
